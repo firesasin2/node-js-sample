@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "nodemon --exec ts-node src/bin/www.ts",
-    "copy-files": "cp -r src/public/ dist/public/ && cp -r src/views/ dist/views/",
+    "copy-files": "xcopy src\\public\\ dist\\public\\ /y && xcopy src\\views\\ dist\\views\\ /y",
     "build": "tsc && npm run copy-files",
-    "start": "node dist/bin/www.js"
+    "start": "node dist\\bin\\www.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
